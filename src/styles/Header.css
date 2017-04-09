@@ -1,0 +1,16 @@
+/*mobile first*/
+
+.headerWithEggs {
+	background-color: #26547c;
+	display: flex;
+	justify-content: space-around;
+
+}
+h1 {
+	font-family: 'Covered By Your Grace', cursive;
+	color: #ffd166;
+}
+
+.headerEgg{
+	height: 4em;
+}
