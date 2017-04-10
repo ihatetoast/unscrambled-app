@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="275px" height="190px" viewBox="0 0 275 190" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>egg no fill</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="275" height="207"></rect>
+        <radialGradient cx="36.668276%" cy="14.6023337%" fx="36.668276%" fy="14.6023337%" r="68.1309582%" id="radialGradient-3">
+            <stop stop-color="#F1E3CC" offset="0%"></stop>
+            <stop stop-color="#E2C698" offset="38.6171632%"></stop>
+            <stop stop-color="#C4957F" offset="100%"></stop>
+        </radialGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="egg-no-fill" transform="translate(0.000000, -9.000000)">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <g id="Mask"></g>
+            <g id="Group-Copy" mask="url(#mask-2)">
+                <g transform="translate(0.000000, 9.703125)">
+                    <path d="M137.219047,183.633147 C183.157178,183.633147 205.221949,142.063819 201.604774,95.2710584 C197.987598,48.4782974 172.778302,0 137.219047,0 C101.659792,0 75.0036263,48.4782974 72.8333209,95.2710584 C70.6630155,142.063819 91.2809167,183.633147 137.219047,183.633147 Z" id="small-egg-copy-2" stroke="none" fill="url(#radialGradient-3)" fill-rule="evenodd"></path>
+                    <path d="M0,51.3414474 C82.5,51.3414474 50.0892857,186.606414 137.5,186.606414 C220,186.606414 200.357143,51.3414474 275,51.3414474" id="Line-Copy-3" stroke="#969287" stroke-width="4" stroke-linecap="square" fill="none"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
