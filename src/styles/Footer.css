@@ -1,4 +1,13 @@
-.logo{
+.credits{
+	display: flex;
+	justify-content: center;
+}
 
-	height: 3em;
+.logo{
+	height: 4em;
+	margin-left: 1.5em;
+}
+.copyright {
+	font-size: 0.3em;
+	margin: 1em 0;
 }

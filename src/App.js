@@ -1,16 +1,17 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './App.css';
 
 import Header from './components/Header';
 import Footer from './components/Footer';
 
-class App extends Component {
+class App extends React.Component {
   render() {
     return (
       <div className="App">
-       <Header />
+       <Header tagline="Omeletting you get organised."/>
         <div> 
-          {this.props.children}
+          <p>To be filled in </p>
+          {/*{this.props.children}*/}
         </div>
        <Footer />
       </div>

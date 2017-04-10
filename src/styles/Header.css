@@ -1,16 +1,25 @@
 /*mobile first*/
-
-.headerWithEggs {
+/*HEADER*/
+.headerFlexWrapper{
 	background-color: #26547c;
 	display: flex;
+	flex-direction: column;
+}
+
+.titleWithEggs {
+	display: flex;
 	justify-content: space-around;
+	padding: 1em;
 
 }
 h1 {
-	font-family: 'Covered By Your Grace', cursive;
 	color: #ffd166;
+	font-family: 'Covered By Your Grace', cursive;
 }
-
+h3 {
+	color: #fff;
+	font-family: 'Roboto', sans-serif;
+}
 .headerEgg{
 	height: 4em;
 }
