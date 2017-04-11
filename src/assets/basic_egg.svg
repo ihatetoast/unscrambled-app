@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="133px" height="188px" viewBox="0 0 133 188" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43 (38999) - http://www.bohemiancoding.com/sketch -->
+    <title>small egg copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <radialGradient cx="36.668276%" cy="14.6023337%" fx="36.668276%" fy="14.6023337%" r="68.1309582%" gradientTransform="translate(0.366683,0.146023),scale(1.000000,0.703005),rotate(62.608622),translate(-0.366683,-0.146023)" id="radialGradient-1">
+            <stop stop-color="#F1E3CC" offset="0%"></stop>
+            <stop stop-color="#E2C698" offset="38.6171632%"></stop>
+            <stop stop-color="#C4957F" offset="100%"></stop>
+        </radialGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M65.9659894,188 C112.918761,188 135.47088,145.442141 131.773811,97.5366337 C128.076743,49.6311264 102.310646,0 65.9659894,0 C29.6213329,0 2.37640864,49.6311264 0.158167456,97.5366337 C-2.06007373,145.442141 19.0132176,188 65.9659894,188 Z" id="small-egg-copy" fill="url(#radialGradient-1)"></path>
+    </g>
+</svg>

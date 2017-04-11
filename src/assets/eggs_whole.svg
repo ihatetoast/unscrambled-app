@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="321px" height="217px" viewBox="0 0 321 217" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
+    <title>whole_eggs</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <radialGradient cx="36.668276%" cy="14.6023337%" fx="36.668276%" fy="14.6023337%" r="68.1309582%" gradientTransform="translate(0.366683,0.146023),scale(1.000000,0.703005),rotate(62.608622),translate(-0.366683,-0.146023)" id="radialGradient-1">
+            <stop stop-color="#F1E3CC" offset="0%"></stop>
+            <stop stop-color="#E2C698" offset="38.6171632%"></stop>
+            <stop stop-color="#C4957F" offset="100%"></stop>
+        </radialGradient>
+        <radialGradient cx="31.914417%" cy="11.5275931%" fx="31.914417%" fy="11.5275931%" r="83.8982884%" gradientTransform="translate(0.319144,0.115276),scale(1.000000,0.703005),rotate(54.522958),translate(-0.319144,-0.115276)" id="radialGradient-2">
+            <stop stop-color="#F1E3CC" offset="0%"></stop>
+            <stop stop-color="#E2C698" offset="38.6171632%"></stop>
+            <stop stop-color="#C4957F" offset="100%"></stop>
+        </radialGradient>
+        <radialGradient cx="41.5193544%" cy="11.0647884%" fx="41.5193544%" fy="11.0647884%" r="52.1285284%" gradientTransform="translate(0.415194,0.110648),scale(1.000000,0.703005),rotate(94.565644),translate(-0.415194,-0.110648)" id="radialGradient-3">
+            <stop stop-color="#F1E3CC" offset="0%"></stop>
+            <stop stop-color="#E2C698" offset="38.6171632%"></stop>
+            <stop stop-color="#C4957F" offset="100%"></stop>
+        </radialGradient>
+        <radialGradient cx="17.4633634%" cy="79.864493%" fx="17.4633634%" fy="79.864493%" r="70.9557212%" gradientTransform="translate(0.174634,0.798645),scale(1.000000,0.703005),rotate(-53.521497),translate(-0.174634,-0.798645)" id="radialGradient-4">
+            <stop stop-color="#F1E3CC" offset="0%"></stop>
+            <stop stop-color="#ECD8B9" offset="14.5812286%"></stop>
+            <stop stop-color="#E2C698" offset="49.5818337%"></stop>
+            <stop stop-color="#C4957F" offset="100%"></stop>
+        </radialGradient>
+        <radialGradient cx="14.2360462%" cy="28.2048484%" fx="14.2360462%" fy="28.2048484%" r="90.1422135%" gradientTransform="translate(0.142360,0.282048),scale(1.000000,0.703005),rotate(51.474419),translate(-0.142360,-0.282048)" id="radialGradient-5">
+            <stop stop-color="#F1E3CC" offset="0%"></stop>
+            <stop stop-color="#ECD8B9" offset="14.5812286%"></stop>
+            <stop stop-color="#E2C698" offset="49.5818337%"></stop>
+            <stop stop-color="#C4957F" offset="100%"></stop>
+        </radialGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="whole_eggs" transform="translate(-19.000000, -12.000000)">
+            <path d="M201.892453,188 C245.234021,188 266.051625,148.715325 262.638903,104.494298 C259.226181,60.2732701 235.441791,14.4593431 201.892453,14.4593431 C168.343115,14.4593431 143.193636,60.2732701 141.146003,104.494298 C139.098369,148.715325 158.550884,188 201.892453,188 Z" id="small-egg-copy" fill="url(#radialGradient-1)"></path>
+            <path d="M272.965989,200 C319.918761,200 342.47088,157.442141 338.773811,109.536634 C335.076743,61.6311264 309.310646,12 272.965989,12 C236.621333,12 209.376409,61.6311264 207.158167,109.536634 C204.939926,157.442141 226.013218,200 272.965989,200 Z" id="small-egg-copy-6" fill="url(#radialGradient-2)"></path>
+            <path d="M85.1704576,199.527523 C131.854055,199.527523 154.276886,157.213642 150.601012,109.582771 C146.925138,61.9518994 121.306755,12.6053016 85.1704576,12.6053016 C49.0341602,12.6053016 21.9454274,61.9518994 19.7399031,109.582771 C17.5343788,157.213642 38.4868597,199.527523 85.1704576,199.527523 Z" id="small-egg-copy-5" fill="url(#radialGradient-3)" transform="translate(85.286298, 106.066412) rotate(-13.000000) translate(-85.286298, -106.066412) "></path>
+            <path d="M175.729446,259.232663 C227.478654,259.232663 252.334573,212.327328 248.259832,159.528058 C244.185091,106.728788 215.786872,52.0276198 175.729446,52.0276198 C135.67202,52.0276198 105.643904,106.728788 103.19906,159.528058 C100.754215,212.327328 123.980238,259.232663 175.729446,259.232663 Z" id="small-egg-copy-4" fill="url(#radialGradient-4)" transform="translate(175.857856, 155.630141) rotate(89.000000) translate(-175.857856, -155.630141) "></path>
+        </g>
+        <g id="broken_egg" transform="translate(-30.000000, 199.000000)" fill="url(#radialGradient-5)">
+            <g id="Group-5" transform="translate(154.000000, 0.000000)">
+                <path d="M125.247658,215.531868 C176.996866,215.531868 201.852784,168.626533 197.778044,115.827263 C193.703303,63.0279933 165.305084,8.32682479 125.247658,8.32682479 C85.1902316,8.32682479 55.1621161,63.0279933 52.7172717,115.827263 C50.2724272,168.626533 73.4984497,215.531868 125.247658,215.531868 Z" id="small-egg-copy-8" transform="translate(125.376067, 111.929346) scale(-1, 1) rotate(63.000000) translate(-125.376067, -111.929346) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

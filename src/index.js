@@ -4,22 +4,25 @@ import { BrowserRouter, Match, Miss } from 'react-router';
 
 import './index.css';
 import App from './App';
+import NotFound from './components/NotFound';
+import Packin from './components/Packin';
+import Plannin from './components/Plannin';
 
 
-const Root = () => {
+const RootEntry = () => {
 	return(
-		<div>
-			<BrowserRouter>
-				<Match exactly pattern="/" component={Home}/>
-				<Match />
-				<Miss />
-
-			</BrowserRouter>
-		</div>
+		<BrowserRouter>
+			<div>
+				<Match exactly pattern="/" component={App} />
+				<Match exactly pattern="/plannin/" component={Plannin} />
+				<Miss component={NotFound}/>
+			</div>
+		</BrowserRouter>
 	)
 }
 
 render(
-  <App />,
+  <RootEntry />,
   document.getElementById('root')
 );
+

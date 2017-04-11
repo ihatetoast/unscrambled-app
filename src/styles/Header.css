@@ -1,5 +1,8 @@
 /*mobile first*/
 /*HEADER*/
+*{
+	box-sizing: border-box;
+}
 .headerFlexWrapper{
 	background-color: #26547c;
 	display: flex;
@@ -9,6 +12,7 @@
 .titleWithEggs {
 	display: flex;
 	justify-content: space-around;
+	margin-bottom: 0;
 	padding: 1em;
 
 }
@@ -19,7 +23,15 @@ h1 {
 h3 {
 	color: #fff;
 	font-family: 'Roboto', sans-serif;
+	font-size: 0.75em;
+	margin: 0 0 0.5em 0;
+}
+.headerEggDiv{
+	padding: 0;
 }
 .headerEgg{
 	height: 4em;
+	margin: 0;
 }
+
+/*Next level up: 1250px*/
