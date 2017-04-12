@@ -1,4 +1,5 @@
 import React from 'react';
+import biggerBoat from '../../assets/biggerBoat.svg';
 
 // const transportation = [
 // 	{ label: 'My car', value: 'car' },
@@ -13,17 +14,18 @@ import React from 'react';
 // 		};
 // 	};
 
-export default React.createClass({
-	getInitialState: function () {
-		return {
+class Transportation extends React.Component{
+	constructor(props, context){
+		super(props, context);
+		this.state = {
 			selectedTrans: 'car'
 		};
-	},
-	render: function() {
+	};
+	render() {
 		return (
 			<div>
 				<div className="eggPics">
-					<img src={require('./../../../assets/biggerboat.png')}/>
+					<img src={ biggerBoat }/>
 				</div>
 				<h3 className="category">I'm going by</h3>
 				<div className="radio">
@@ -48,12 +50,14 @@ export default React.createClass({
 
 			</div>
 			);
-	},
-	handleTransChange: function (changeEvent) {
+	}
+	handleTransChange(changeEvent){
 		this.setState({
 			selectedTrans: changeEvent.target.value,
 		});
 		//if megabus is chosen, return a form to have the megabus info
 	}
 
-});
+};
+
+export default Transportation;

@@ -1,5 +1,5 @@
 import React from 'react';
-
+import forrest from '../../assets/forrest.svg';
 // constructor(props, context){
 // 		super(props, context);
 // 		this.state = {
@@ -7,17 +7,18 @@ import React from 'react';
 // 		};
 // 	};
 
-export default React.createClass({
-	getInitialState: function () {
-		return {
+class Running extends React.Component{
+	constructor(props, context){
+		super(props, context);
+		this.state = {
 			selectedRun: "run"
 		};
-	},
+	};
 	render(){
 		return(
 			<div>
 				<div className="eggPics">
-					<img src={require('./../../../assets/forrest.png')}/>
+					<img src={ forrest }/>
 				</div>
 				<h3  className="category">I hope to</h3>
 				<div className="radio">
@@ -35,7 +36,7 @@ export default React.createClass({
 				<hr className="borderVee"/>
 			</div>
 		)
-	},
+	}
 
 	handleRun(changeEvent) {
 		this.setState({
@@ -44,4 +45,5 @@ export default React.createClass({
 		//running list
 	}
 
-})
+}
+export default Running;

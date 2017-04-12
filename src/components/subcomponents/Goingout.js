@@ -1,4 +1,5 @@
 import React from 'react';
+import katzDeli from '../../assets/katzdeli.svg';
 // constructor(props, context){
 // 		super(props, context);
 // 		this.state = {
@@ -6,18 +7,19 @@ import React from 'react';
 // 		};
 // 	};
 
-export default React.createClass({
-	getInitialState: function () {
-		return {
+class Goingout extends React.Component{
+	constructor(props, context) {
+		super(props, context)
+		this.state = {
 			selectedGoingOut: 'going out'
 		};
-	},
-	render: function(){
+	}
+	render(){
 		return(
 			<div>
 				<h3  className="category">I plan on (make egg pic)</h3>
 				<div className="eggPics">
-					<img src={require('./../../../assets/katzscene.png')}/>
+					<img src={ katzDeli }/>
 				</div>
 				<div className="radio">
 					<label>
@@ -34,11 +36,12 @@ export default React.createClass({
 				<hr className="borderVee"/>
 			</div>	
 		)
-	},	
-	handleGoingOut: function (changeEvent) {
+	}
+	handleGoingOut(changeEvent) {
 		this.setState({
 			selectedGoingOut: changeEvent.target.value,
 		});
 		//bling list
 	}
-})
+};
+export default Goingout;

@@ -1,5 +1,5 @@
 import React from 'react';
-
+import shiningTwins from '../../assets/shining-twins_living.svg';
 // constructor(props, context){
 // 		super(props, context);
 // 		this.state = {
@@ -7,17 +7,18 @@ import React from 'react';
 // 		};
 // 	};
 
-export default React.createClass({
-	getInitialState: function () {
-		return {
+class Accommodation extends  React.Component{
+	constructor(props, context){
+		super(props, context);
+		this.state = {
 			selectedAccom: 'pooh'
 		};
-	},
-	render: function() {
+	};
+	render() {
 		return (
 			<div>
 				<div className="eggPics">
-					<img src={require('./../../../assets/shining-twins_living.jpg')}/>
+					<img src={ shiningTwins }/>
 				</div>
 				<h3  className="category">I'm staying</h3>
 				<div className="radio">
@@ -47,7 +48,7 @@ export default React.createClass({
 				<hr className="borderVee"/>
 			</div>
 		);
-	},
+	}
 	handleResChange(changeEvent) {
 		this.setState({
 			selectedAccom: changeEvent.target.value,
@@ -55,5 +56,7 @@ export default React.createClass({
 		//have the name at top of the list
 		//also give the list that always goes
 	}
-});
+};
+
+export default Accommodation;
 

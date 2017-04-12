@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link, hashHistory } from 'react-router';
 // import $ from 'jquery'
+import './../styles/PlanOrPack.css';
 
 const PlanOrPack = () =>{
 	return (
