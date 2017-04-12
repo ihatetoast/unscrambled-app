@@ -1,16 +1,20 @@
-import React from 'react';
-import { Link, hashHistory } from 'react-router';
-// import $ from 'jquery'
-import './../styles/PlanOrPack.css';
+// not currently in use. delete once i'm sure it'll stay that way
 
-const PlanOrPack = () =>{
-	return (
-		<div className="eggBtnHldr">
-			<h2>Are you plannin' or packalackin?</h2>
-			<p>Ima gonna see two buttons that are right now commented out</p>
-			<Link to="/plannin"><button className="btnEgg majorBtnEgg" >Plannin'</button></Link>
-			<Link to="/packin"><button className="btnEgg majorBtnEgg">Packalackin'</button></Link>
-		</div>
-	);
-}
-export default PlanOrPack;
+// import React from 'react';
+// import EggButton from './subcomponents/EggButton'
+// import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+
+// import './../styles/PlanOrPack.css';
+
+// const PlanOrPack = () =>{
+// 	return (
+// 		<div>
+// 			<h2>Are you plannin' or packalackin?</h2>
+// 			<div className="eggBtnHldr">
+// 				<EggButton btntxt="Plannin'!" />
+// 				<EggButton btntxt="Packin'!" />
+// 			</div>
+// 		</div>
+// 	);
+// }
+// export default PlanOrPack;

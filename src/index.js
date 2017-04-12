@@ -1,28 +1,22 @@
 import React from 'react';
 import { render } from 'react-dom';
-import { BrowserRouter as Router, Link, Match, Miss, Route } from 'react-router';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 import './index.css';
 import App from './App';
-import NotFound from './components/NotFound';
 import Packin from './components/Packin';
 import Plannin from './components/Plannin';
 
 
 const RootEntry = () => {
 	return(
-		<div>
-			<Router>
-				<div>
-					<Match exact pattern="/" component={App} />
-					<Match pattern="/plannin" component={Plannin} />
-					<Route path="/packin" component={Packin} />
-
-					<Miss component={NotFound}/>
-				</div>
-			</Router>
-			
-      </div>
+		<Router>
+			<div>
+				<Route exact path="/" component={App} />
+				<Route path="/plannin" component={Plannin} />
+				<Route path="/packin" component={Packin} />
+			</div>
+		</Router>
 	)
 }
 
@@ -31,3 +25,12 @@ render(
   document.getElementById('root')
 );
 
+
+
+// <Router>
+// 			<div>
+// 				<Route path="/" component={App} />
+// 				<Route path="/plannin" component={Plannin} />
+// 				<Route path="/topics" component={Packin} />
+// 			</div>
+// 		</Router>

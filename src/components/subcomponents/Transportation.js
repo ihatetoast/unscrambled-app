@@ -7,12 +7,6 @@ import biggerBoat from '../../assets/biggerBoat.svg';
 // 	{ label: 'Motorcycle', value: 'motorcycle' }
 // ];
 
-// constructor(props, context){
-// 		super(props, context);
-// 		this.state = {
-// 			lists: Lists
-// 		};
-// 	};
 
 class Transportation extends React.Component{
 	constructor(props, context){
@@ -25,7 +19,7 @@ class Transportation extends React.Component{
 		return (
 			<div>
 				<div className="eggPics">
-					<img src={ biggerBoat } alt='egg in boat chumming water with egg shark in background.'/>
+					<img src={ biggerBoat } alt='egg in boat chumming water with egg shark in background.' />
 				</div>
 				<h3 className="category">I'm going by</h3>
 				<div className="radio">
