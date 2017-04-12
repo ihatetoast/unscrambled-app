@@ -17,9 +17,9 @@ class Goingout extends React.Component{
 	render(){
 		return(
 			<div>
-				<h3  className="category">I plan on (make egg pic)</h3>
+				<h3  className="category">I plan on </h3>
 				<div className="eggPics">
-					<img src={ katzDeli }/>
+					<img src={ katzDeli } alt="two eggs at a deli. one faking an orgasm."/>
 				</div>
 				<div className="radio">
 					<label>

@@ -1,14 +1,14 @@
 import React from 'react';
-import {Link} from 'react-router';
+// import {Link} from 'react-router';
 
 
 export default React.createClass({
 
-	render: function() {
+	render() {
 		const items = this.props.items.map((item, i) =>{
-				return(
-					<p>{this.props.item[i]}</p>
-				);
+			return(
+				<p>{this.props.item[i]}</p>
+			);
 		});
 	}
 });

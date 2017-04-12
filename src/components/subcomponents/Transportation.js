@@ -25,7 +25,7 @@ class Transportation extends React.Component{
 		return (
 			<div>
 				<div className="eggPics">
-					<img src={ biggerBoat }/>
+					<img src={ biggerBoat } alt='egg in boat chumming water with egg shark in background.'/>
 				</div>
 				<h3 className="category">I'm going by</h3>
 				<div className="radio">

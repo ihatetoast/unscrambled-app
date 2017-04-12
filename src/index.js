@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from 'react-dom';
-import { BrowserRouter, Match, Miss } from 'react-router';
+import { BrowserRouter as Router, Link, Match, Miss, Route } from 'react-router';
 
 import './index.css';
 import App from './App';
@@ -11,13 +11,18 @@ import Plannin from './components/Plannin';
 
 const RootEntry = () => {
 	return(
-		<BrowserRouter>
-			<div>
-				<Match exactly pattern="/" component={App} />
-				<Match exactly pattern="/plannin/" component={Plannin} />
-				<Miss component={NotFound}/>
-			</div>
-		</BrowserRouter>
+		<div>
+			<Router>
+				<div>
+					<Match exact pattern="/" component={App} />
+					<Match pattern="/plannin" component={Plannin} />
+					<Route path="/packin" component={Packin} />
+
+					<Miss component={NotFound}/>
+				</div>
+			</Router>
+			
+      </div>
 	)
 }
 

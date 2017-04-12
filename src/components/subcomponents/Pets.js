@@ -1,4 +1,5 @@
 import React from 'react';
+// import peeWeePets from '../../assets/peeweepetstore.svg';
 
 // constructor(props, context){
 // 		super(props, context);
@@ -17,7 +18,7 @@ export default React.createClass({
 		return(
 			<div>
 				<div className="eggPics">
-					{/*<img src={require('./../../../assets/forrest.png')}/>*/}
+					{/*<img src={ pee wee herman pet shop scene }/>*/}
 				</div>
 				<h3  className="category">I am bringing</h3>
 				<div className="radio">

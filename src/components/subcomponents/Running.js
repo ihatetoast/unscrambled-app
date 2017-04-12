@@ -18,7 +18,7 @@ class Running extends React.Component{
 		return(
 			<div>
 				<div className="eggPics">
-					<img src={ forrest }/>
+					<img src={ forrest } alt="egg running and followed by a pack of eggs."/>
 				</div>
 				<h3  className="category">I hope to</h3>
 				<div className="radio">

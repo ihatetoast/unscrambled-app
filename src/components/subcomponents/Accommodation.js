@@ -18,7 +18,7 @@ class Accommodation extends  React.Component{
 		return (
 			<div>
 				<div className="eggPics">
-					<img src={ shiningTwins }/>
+					<img src={ shiningTwins } alt="eggs dressed in dresses holding hands in the hallway"/>
 				</div>
 				<h3  className="category">I'm staying</h3>
 				<div className="radio">

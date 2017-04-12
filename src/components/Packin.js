@@ -11,8 +11,8 @@ import Lists from './../packingList';
 */
 
 class Packin extends React.Component {
-	constructor(props, context){
-		super(props, context);
+	constructor(props){
+		super(props);
 		this.state = {
 			lists: Lists
 		};

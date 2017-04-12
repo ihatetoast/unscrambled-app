@@ -1,5 +1,8 @@
-
-
+/*make the egg smaller for mobile then to 126 and 180 for larger*/
+.eggBtnHldr{
+	text-align: center;
+	margin: 2em auto;
+}
 .majorBtnEgg{
 	width: 126px;
 	height: 180px;
