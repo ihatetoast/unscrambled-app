@@ -1,17 +1,53 @@
 import React from 'react';
 import EggButton from './EggButton';
+import RadioButtons from './RadioButtons';
 
 class RadioContainer extends React.Component{
-  getLists(evt){
-    evt.preventDefault();
-    console.log("save button fired.")
+  constructor(props) {
+    super(props);
+    this.state = {
+      transOptions: [],
+      transSelection: [],
+      accomOptions: [],
+      accomSelection: [],
+      petsOptions: [],
+      petsSelection: [],
+      exerOptions: [],
+      exerSelection: [],
+      gooutOptions: [],
+      gooutSelection: []
+    };
+    this.handleChoiceSelection = this.handleChoiceSelection.bind(this);
+  }
+  componentDidMount() {
+    fetch('./../../options.js')
+      .then(data => {
+        this.setState({
+          transSelection: data.transSelection,
+        });
+      });
+  }
+  handleChoiceSelection(e) {
+    this.setState(
+      { transSelection: [e.target.value] }, () => console.log('trans:', this.state.transSelection)
+      );
+  }
+  getLists(){
+    console.log(`You need to get lists.`)
   }
   render(){
     return(
     <div>
-      <h4>Choose wisely:</h4>
       <form className="radioBtnHolder" onSubmit={(e) => this.getLists(e)}>
-        <EggButton type="submit" className="btnEgg btnEggMinor" btntext="Save" />
+        <p style={`font-size= 5px`}>if you see me, the form is here</p>
+        <RadioButtons
+          title={'How am I getting there??'}
+          setName={'tranportation'}
+          controlFunc={this.handleChoiceSelections}
+          type={'radio'}
+          options={this.state.transOptions}
+          selectedOptions={this.state.transSelection} />
+        <EggButton type="submit" className="btnEgg btnEggMinor" btntext="Save" value="Submit"/>
       </form>
     </div>
     )

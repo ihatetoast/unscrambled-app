@@ -1,14 +1,14 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 import './App.css';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import EggButton from './components/subcomponents/EggButton';
 
-function tripPlan(props){
-	return <span>{props.btntext}</span>
-}
+// function tripPlan(props){
+// 	return <span>{props.btntext}</span>
+// }
 function App(){
 	return(
 		<div className="App">

@@ -1,4 +1,13 @@
+import React from 'react';
 
+
+const RadioButtons = (props) => (
+	<div>
+		<p>i am a pretend radio button boop boop boop</p>
+	</div>
+
+)
+export default RadioButtons
 
 /*
 / *********************************** /
@@ -9,7 +18,7 @@ Problem: I'm repeating myself
 		The code below is repeated too much. 
 		<div className="radio">
 			<label>
-				<input type="radio" name='transportation' className='radio' value="car" checked={this.state.selectedTrans === 'car'} onChange={this.handleTransChange}/>
+				<input type="radio" name='transportation' value="car" checked={this.state.selectedTrans === 'car'} onChange={this.handleTransChange}/>
 				My car
 			</label>
 		</div>
@@ -22,32 +31,34 @@ Solution: DRY OUT
 
 	create a component called `RadioGroup` that uses those props to re-create that same code you just shared
 
-these will be the arrays. leave as comments )
-	const transportation = [
+these will be the objs in an array
+const choices = [
+	 transportation: {
 	    { label: 'my car', value: 'car' },
 	    { label: 'Megabus', value: 'Megabus' },
 	    { label: 'my motorcycle or a bigger boat', value: 'motorcycle' }
-	];
-	const accommodation = [
+	},
+	accommodation: {
 		{ label: 'with Pooh', value: 'pooh' },
-	    { label: 'with Dad and Ellen\'s', value: 'dad' },
+	    { label: 'with Dad and Ellen, value: 'dad' },
 	    { label: 'with Mary and Jeff', value: 'mary' },
 	    { label: 'at La Quinta or The Overlook', value: 'la quinta' }
-	];
-	const pets = [
+	},
+	pets: {
 	    { label: 'all the critters', value: 'all the critters' },
 	    { label: 'just the hounds', value: 'just the hounds' },
 	    { label: 'just the cats', value: 'just the cats' },
 	    { label: 'just myself', value: 'just myself' }
-	];
-	const running =[
+	},
+	runnin: {
 		{ label: 'running', value: 'run },
 		{ label: 'slacking', value: 'slack' }
-	];
-	const goingOut =[
+	},
+	goingOut: {
 		{ label: 'going out', value: 'going out' },
 		{ label: 'staying in', value: 'staying in' }
-	];
+	}
+]
 
 	
 
