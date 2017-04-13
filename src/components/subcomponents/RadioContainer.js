@@ -1,4 +1,23 @@
+import React from 'react';
+import EggButton from './EggButton';
 
+class RadioContainer extends React.Component{
+  getLists(evt){
+    evt.preventDefault();
+    console.log("save button fired.")
+  }
+  render(){
+    return(
+    <div>
+      <h4>Choose wisely:</h4>
+      <form className="radioBtnHolder" onSubmit={(e) => this.getLists(e)}>
+        <EggButton type="submit" className="btnEgg btnEggMinor" btntext="Save" />
+      </form>
+    </div>
+    )
+  }
+};
+export default RadioContainer;
 
 
 
@@ -10,6 +29,11 @@
 
 
 /*
+<form className="radioBtnHolder" onSubmit={(e) => this.getLists(e)}>
+        <EggButton type="submit" className="btnEgg btnEggMinor" btntext="Save" />
+      </form>
+
+
 NOTES ON RADIO BUTTONS TO DRY OUT CODE:
 
 1) create a container component for the radio buttons

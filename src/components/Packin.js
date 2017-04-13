@@ -12,7 +12,6 @@ class Packin extends React.Component{
 			<div>
 				<Header />
 				<Link to="/"><EggButton className="btnEgg btnEggHome" btntext="Home" /></Link>
-				
 				<Footer />
 			</div>
 		);

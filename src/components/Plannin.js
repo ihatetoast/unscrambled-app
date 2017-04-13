@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import Header from './Header';
 import Footer from './Footer';
 import EggButton from './subcomponents/EggButton';
+import RadioContainer from './subcomponents/RadioContainer';
 // import EggButtonSmall from './subcomponents/EggButton-small';
 
 // import $ from 'jquery'
@@ -21,20 +22,10 @@ class Plannin extends React.Component{
 			<div>
 				<Header />
 				<Link to="/"><EggButton className="btnEgg btnEggHome" btntext="Home" /></Link>
-				<section>
 					<div className="scramListsHolder">
 						<h2>How you gonna get there? Who's goin'? Watcha doin'?</h2>
-						{/*<form onSubmit={this.handleFormSubmit}>
-							<Transportation />
-							<Accommodation />
-							<Pets />
-							<Running />
-							<Goingout />
-							<button className="btnEgg minorBtnEgg" type="submit">Save</button>
-						</form>	*/}
+						<RadioContainer />
 					</div>
-				</section>
-				<EggButton className="btnEgg btnEggMinor" btntext="Save"/>
 				<Footer />
 			</div>
 		);

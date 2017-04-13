@@ -20,7 +20,7 @@ class Accommodation extends  React.Component{
 				<div className="eggPics">
 					<img src={ shiningTwins } alt="eggs dressed in dresses holding hands in the hallway"/>
 				</div>
-				<h3  className="category">I'm staying</h3>
+				<h3  className="category">I&apos;m staying</h3>
 				<div className="radio">
 					<label>
 					<input type="radio" name='accommodation' className='radio' value="pooh" checked={this.state.selectedAccom === 'pooh'} onChange={this.handleResChange}/>

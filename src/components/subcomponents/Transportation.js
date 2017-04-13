@@ -21,7 +21,7 @@ class Transportation extends React.Component{
 				<div className="eggPics">
 					<img src={ biggerBoat } alt='egg in boat chumming water with egg shark in background.' />
 				</div>
-				<h3 className="category">I'm going by</h3>
+				<h3 className="category">I&apos;m going by</h3>
 				<div className="radio">
 					<label>
 					<input type="radio" name='transportation' className='radio' value="car" checked={this.state.selectedTrans === 'car'} onChange={this.handleTransChange}/>
