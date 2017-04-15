@@ -1,6 +1,7 @@
 import React from 'react';
 import EggButton from './EggButton';
-import RadioButtons from './RadioButtons';
+import RadioGroup from './RadioGroup';
+
 
 class RadioContainer extends React.Component{
   constructor(props) {
@@ -14,39 +15,98 @@ class RadioContainer extends React.Component{
       petsSelection: [],
       exerOptions: [],
       exerSelection: [],
-      gooutOptions: [],
-      gooutSelection: []
+      fancyOptions: [],
+      fancySelection: []
     };
-    this.handleChoiceSelection = this.handleChoiceSelection.bind(this);
+    this.handleTransportation = this.handleTransportation.bind(this);
+    this.handleAccommodation = this.handleAccommodation.bind(this);
+    this.handlePets = this.handlePets.bind(this);
+    this.handleExercise = this.handleExercise.bind(this);
+    this.handleFancy = this.handleFancy.bind(this);
   }
   componentDidMount() {
-    fetch('./../../options.js')
+    fetch('./choices_db.json')
+      .then(response => response.json())
       .then(data => {
+        console.log(data)
         this.setState({
+          transOptions: data.transOptions,
           transSelection: data.transSelection,
-        });
-      });
+          accomOptions: data.accomOptions,
+          accomSelection: data.accomSelection,
+          petsOptions: data.petsOptions,
+          petsSelection: data.petsSelection,
+          exerOptions: data.exerOptions,
+          exerSelection: data.exerSelection,
+          fancyOptions: data.fancyOptions,
+          fancySelection: data.fancySelection
+        })
+      })
+      .catch(e => console.log("bugger"))
   }
-  handleChoiceSelection(e) {
-    this.setState(
-      { transSelection: [e.target.value] }, () => console.log('trans:', this.state.transSelection)
-      );
+  handleSubmit(e){
+    console.log(`You've submitted. Now you need to get lists.`);
   }
-  getLists(){
-    console.log(`You need to get lists.`)
+  
+  handleTransportation(e){
+    console.log(`Handle transportation fired. Should see list for the option I chose.`);
+    this.setState({ transSelection: [e.target.value] });
+  }
+  handleAccommodation(e){
+    console.log(`Handle accommodation fired. Should see list for the option I chose.`);
+    this.setState({ accomSelection: [e.target.value] });
+  }
+  handlePets(e){
+    console.log(`Handle pets fired. Should see list for the option I chose.`);
+    this.setState({ petsSelection: [e.target.value] });
+  }
+  handleExercise(e){
+    console.log(`Handle exercise fired. Should see list for the option I chose.`);
+    this.setState({ exerSelection: [e.target.value] });
+  }
+  handleFancy(e){
+    console.log(`Handle fancy fired. Should see list for the option I chose.`);
+    this.setState({ fancySelection: [e.target.value] });
   }
   render(){
     return(
     <div>
-      <form className="radioBtnHolder" onSubmit={(e) => this.getLists(e)}>
-        <p style={`font-size= 5px`}>if you see me, the form is here</p>
-        <RadioButtons
-          title={'How am I getting there??'}
-          setName={'tranportation'}
-          controlFunc={this.handleChoiceSelections}
+      <form className="radioBtnHolder" onSubmit={(e) => this.handleSubmit(e)}>
+        <RadioGroup
+          title={'How am I getting there?'}
+          setName={'transportation'}
+          controlFunc={this.handleTransportation}
           type={'radio'}
           options={this.state.transOptions}
           selectedOptions={this.state.transSelection} />
+        <RadioGroup
+          title={'Where am I staying?'}
+          setName={'accommodation'}
+          controlFunc={this.handleAccommodation}
+          type={'radio'}
+          options={this.state.accomOptions}
+          selectedOptions={this.state.accomSelection} />
+        <RadioGroup
+          title={'Whom am I taking?'}
+          setName={'pets'}
+          controlFunc={this.handlePets}
+          type={'radio'}
+          options={this.state.petsOptions}
+          selectedOptions={this.state.petsSelection} />
+        <RadioGroup
+          title={`Am I runnin' or slackin'?`}
+          setName={'exercise'}
+          controlFunc={this.handleExercise}
+          type={'radio'}
+          options={this.state.exerOptions}
+          selectedOptions={this.state.exerSelection} />
+        <RadioGroup
+          title={'Do I have to get fancy?'}
+          setName={'fancy'}
+          controlFunc={this.handleFancy}
+          type={'radio'}
+          options={this.state.fancyOptions}
+          selectedOptions={this.state.fancySelection} />
         <EggButton type="submit" className="btnEgg btnEggMinor" btntext="Save" value="Submit"/>
       </form>
     </div>
@@ -158,7 +218,6 @@ ReactDOM.render(<App />, document.getElementById('container'));
 
 
 */
-
 
 
 
