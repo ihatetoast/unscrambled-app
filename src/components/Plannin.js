@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import './../styles/Plannin.css';
 
 import Header from './Header';
 import Footer from './Footer';
@@ -11,11 +12,13 @@ class Plannin extends React.Component{
 		return (
 			<div>
 				<Header />
-				<Link to="/"><EggButton className="btnEgg btnEggHome" btntext="Home" /></Link>
-					<div className="scramListsHolder">
-						<h2>You have decisions to make:</h2>
-						<RadioContainer />
-					</div>
+					<section className="torso plannin">
+						<Link to="/"><EggButton className="btnEgg btnEggHome" btntext="Home" /></Link>
+						<div className="scramListsHolder">
+							<h2>You have decisions to make:</h2>
+							<RadioContainer />
+						</div>
+					</section>
 				<Footer />
 			</div>
 		);

@@ -1,15 +1,15 @@
 import React from 'react';
 import EggBorder from './EggBorder';
-
+import './../../styles/RadioGroup.css';
 
 
 const RadioGroup = (props) => (
-	<div>
-		<label>{props.title}</label>
-		<div className="checkbox-group">
+	<div className="radio-group">
+		<label className="form-title">{props.title}</label>
+		<div className="radio-options">
       		{props.options.map(option => {
         		return (
-          			<label key={option} className="form-label capitalize">
+          			<label key={option} className="optionLabel">
 			            <input
 			              className="radio"
 			              name={props.setName}

@@ -1,0 +1,25 @@
+.radio-group{
+	border: 1px solid green;
+
+}
+
+.radio-options{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin-bottom: 0;
+	padding: 1em 1em 0 1em;
+
+}
+
+.optionLabel{
+	font-size: 1.2em;
+}
+.form-title{
+	font-size: 1.5em;
+	padding: 1em;
+}
+.radio{
+	color: yellow;
+	border: 1px dotted red;
+}

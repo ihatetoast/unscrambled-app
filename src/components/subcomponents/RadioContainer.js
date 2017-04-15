@@ -102,7 +102,7 @@ class RadioContainer extends React.Component{
           type={'radio'}
           options={this.state.transOptions}
           selectedOptions={this.state.transSelection} />
-    
+
         <RadioGroup
           title={'Where am I staying?'}
           setName={'accommodation'}
@@ -118,7 +118,7 @@ class RadioContainer extends React.Component{
           options={this.state.petsOptions}
           selectedOptions={this.state.petsSelection} />
         <RadioGroup
-          title={`Am I runnin' or slackin'?`}
+          title={`Am I sweatin' or slackin'?`}
           setName={'exercise'}
           controlFunc={this.handleExercise}
           type={'radio'}

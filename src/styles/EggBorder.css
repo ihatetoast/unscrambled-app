@@ -1,6 +1,6 @@
 .eggCartons {
-background: url(./../assets/border_egg.svg) repeat-x 0 0;
-border: 0;
-height: 30px;
-margin-bottom: 2em;
+	background: url(./../assets/border_egg.svg) repeat-x 0 0;
+	border: 0;
+	height: 30px;
+	margin-bottom: 2em 0;
 }
