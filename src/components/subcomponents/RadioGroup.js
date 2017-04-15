@@ -1,4 +1,5 @@
 import React from 'react';
+import EggBorder from './EggBorder';
 
 
 
@@ -18,9 +19,10 @@ const RadioGroup = (props) => (
 			              type={props.type} /> 
 			              {option}
           			</label>
-        );	
-      })}
-    </div>
+        		);	
+      		})}
+      		<EggBorder />
+    	</div>
 	</div>
 
 )

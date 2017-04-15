@@ -9,7 +9,3 @@ const EggButton = (props) =>{
 }
 export default EggButton;
 
-
-// return (
-// 		<button className="btnEgg btnEggMajor"  >{this.props.btntxt}</button>
-// 	);

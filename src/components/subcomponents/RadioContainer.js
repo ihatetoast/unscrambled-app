@@ -68,10 +68,33 @@ class RadioContainer extends React.Component{
     console.log(`Handle fancy fired. Should see list for the option I chose.`);
     this.setState({ fancySelection: [e.target.value] });
   }
+  handleClearAll(e) {
+    e.preventDefault();
+    this.setState({
+      transSelection: [],
+      accomSelection: [],
+      petsSelection: [],
+      exerSelection: [],
+      fancySelection: []
+    });
+  }
+  handleDecisions(e) {
+    e.preventDefault();
+    const tripDecisions = {
+      transSelection: this.state.transSelection,
+      accomSelection: this.state.accomSelection,
+      petsSelection: this.state.petsSelection,
+      exerSelection: this.state.exerSelection,
+      fancySelection: this.state.fancySelection
+    
+    };
+    console.log('Send this in a POST request:', tripDecisions)
+    this.handleClearAll(e);
+  }
   render(){
     return(
     <div>
-      <form className="radioBtnHolder" onSubmit={(e) => this.handleSubmit(e)}>
+      <form className="radioBtnHolder" onSubmit={(e) => this.handleDecisions(e)}>
         <RadioGroup
           title={'How am I getting there?'}
           setName={'transportation'}
@@ -79,6 +102,7 @@ class RadioContainer extends React.Component{
           type={'radio'}
           options={this.state.transOptions}
           selectedOptions={this.state.transSelection} />
+    
         <RadioGroup
           title={'Where am I staying?'}
           setName={'accommodation'}
@@ -108,6 +132,7 @@ class RadioContainer extends React.Component{
           options={this.state.fancyOptions}
           selectedOptions={this.state.fancySelection} />
         <EggButton type="submit" className="btnEgg btnEggMinor" btntext="Save" value="Submit"/>
+        <EggButton onClick={this.handleClearAll} className="btnEgg btnEggMinor" btntext="Clear"/>
       </form>
     </div>
     )

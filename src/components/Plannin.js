@@ -13,7 +13,7 @@ class Plannin extends React.Component{
 				<Header />
 				<Link to="/"><EggButton className="btnEgg btnEggHome" btntext="Home" /></Link>
 					<div className="scramListsHolder">
-						<h2>How you gonna get there? Who's goin'? Watcha doin'?</h2>
+						<h2>You have decisions to make:</h2>
 						<RadioContainer />
 					</div>
 				<Footer />

@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="275px" height="190px" viewBox="0 0 275 190" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+<svg width="40px" height="28px" viewBox="0 0 40 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
     <title>egg no fill</title>
     <desc>Created with Sketch.</desc>
     <defs>
-        <rect id="path-1" x="0" y="0" width="275" height="207"></rect>
-        <radialGradient cx="36.668276%" cy="14.6023337%" fx="36.668276%" fy="14.6023337%" r="68.1309582%" id="radialGradient-3">
+        <rect id="path-1" x="0" y="0" width="40" height="30"></rect>
+        <radialGradient cx="36.668276%" cy="14.6023337%" fx="36.668276%" fy="14.6023337%" r="68.1309582%" gradientTransform="translate(0.366683,0.146023),scale(1.000000,0.706731),rotate(62.484741),translate(-0.366683,-0.146023)" id="radialGradient-3">
             <stop stop-color="#F1E3CC" offset="0%"></stop>
             <stop stop-color="#E2C698" offset="38.6171632%"></stop>
             <stop stop-color="#C4957F" offset="100%"></stop>
         </radialGradient>
     </defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="egg-no-fill" transform="translate(0.000000, -9.000000)">
+        <g id="egg-no-fill" transform="translate(0.000000, -1.000000)">
             <mask id="mask-2" fill="white">
                 <use xlink:href="#path-1"></use>
             </mask>
             <g id="Mask"></g>
             <g id="Group-Copy" mask="url(#mask-2)">
-                <g transform="translate(0.000000, 9.703125)">
-                    <path d="M137.219047,183.633147 C183.157178,183.633147 205.221949,142.063819 201.604774,95.2710584 C197.987598,48.4782974 172.778302,0 137.219047,0 C101.659792,0 75.0036263,48.4782974 72.8333209,95.2710584 C70.6630155,142.063819 91.2809167,183.633147 137.219047,183.633147 Z" id="small-egg-copy-2" stroke="none" fill="url(#radialGradient-3)" fill-rule="evenodd"></path>
-                    <path d="M0,51.3414474 C82.5,51.3414474 50.0892857,186.606414 137.5,186.606414 C220,186.606414 200.357143,51.3414474 275,51.3414474" id="Line-Copy-3" stroke="#969287" stroke-width="4" stroke-linecap="square" fill="none"></path>
+                <g transform="translate(0.000000, 1.406250)">
+                    <path d="M19.9591341,26.6134995 C26.641044,26.6134995 29.8504653,20.5889593 29.3243307,13.8073998 C28.7981961,7.02584021 25.1313894,0 19.9591341,0 C14.7868789,0 10.9096184,7.02584021 10.5939376,13.8073998 C10.2782568,20.5889593 13.2772242,26.6134995 19.9591341,26.6134995 Z" id="small-egg-copy-2" stroke="none" fill="url(#radialGradient-3)" fill-rule="evenodd"></path>
+                    <path d="M0,7.44078947 C12,7.44078947 7.28571429,27.0444079 20,27.0444079 C32,27.0444079 29.1428571,7.44078947 40,7.44078947" id="Line-Copy-3" stroke="#969287" stroke-width="1" fill="none" stroke-linecap="square"></path>
                 </g>
             </g>
         </g>
