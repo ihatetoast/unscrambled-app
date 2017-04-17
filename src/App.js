@@ -11,11 +11,13 @@ import EggButton from './components/subcomponents/EggButton';
 // }
 function App(){
 	return(
-		<div className="App">
+		<div className="torso">
 			<Header tagline="Omeletting you get organised."/>
-			<div className="eggBtnHldr">
-				<Link to="/plannin"><EggButton className="btnEgg btnEggMajor" btntext="Plannin'!" /></Link>
-				<Link to="/packin"><EggButton className="btnEgg btnEggMajor" btntext="Packin'!" /></Link>
+			<div className="content">
+				<div className="eggBtnHldr">
+					<Link to="/plannin"><EggButton className="btnEgg btnEggMajor" btntext="Plannin'!" /></Link>
+					<Link to="/packin"><EggButton className="btnEgg btnEggMajor" btntext="Packin'!" /></Link>
+				</div>
 			</div>
 			<Footer />
 		</div>

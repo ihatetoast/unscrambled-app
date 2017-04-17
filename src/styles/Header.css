@@ -1,8 +1,6 @@
 /*mobile first*/
 /*HEADER*/
-*{
-	box-sizing: border-box;
-}
+
 .headerFlexWrapper{
 	background-color: #26547c;
 	display: flex;

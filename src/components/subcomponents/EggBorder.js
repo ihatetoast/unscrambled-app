@@ -3,7 +3,7 @@ import './../../styles/EggBorder.css';
 
 const EggBorder = () =>{
 	return(
-		<hr className="eggCartons" />
+		<span className="eggCartons"> </span>
 		)
 }
 export default EggBorder;

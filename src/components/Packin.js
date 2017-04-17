@@ -9,9 +9,11 @@ import EggButton from './subcomponents/EggButton';
 class Packin extends React.Component{
 	render() {
 		return (
-			<div>
+			<div className="torso">
 				<Header />
-				<Link to="/"><EggButton className="btnEgg btnEggHome" btntext="Home" /></Link>
+				<div className="content">
+					<Link to="/"><EggButton className="btnEgg btnEggHome" btntext="Home" /></Link>
+				</div>
 				<Footer />
 			</div>
 		);

@@ -6,6 +6,7 @@ import './../styles/Footer.css';
 
 const Footer = () => {
 	return (
+		<div>
 			<div className="footer">
 				<div className="credits">
 					<div className="copyright">
@@ -15,6 +16,8 @@ const Footer = () => {
 					<img className="logo" src={logo} alt="logo of greyhound eating toast"/>
 				</div>
 			</div>
+
+		</div>
 	);
 }
 
