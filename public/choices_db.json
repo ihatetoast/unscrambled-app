@@ -3,7 +3,7 @@
   "transSelection": ["By car"],
   "accomOptions": ["With Pooh", "With Dad and Ellen", "With Mary and Jeff", "At La Quinta"],
   "accomSelection": ["With Pooh"],
-  "petsOptions": ["Only my hounds", "Only my cats", "Everyone! My hounds and cats", "No pets!"],
+  "petsOptions": ["Only my hounds", "Only my cats", "All the furbabies", "No furbabies"],
   "petsSelection": ["Only my hounds"],
   "exerOptions": ["Sweatin'", "Slackin'"],
   "exerSelection": ["Sweatin'"],
