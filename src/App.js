@@ -7,18 +7,16 @@ import Footer from './components/Footer';
 import EggButton from './components/subcomponents/EggButton';
 
 
-// function tripPlan(props){
-// 	return <span>{props.btntext}</span>
-// }
-//class App extends React.Component(){
 function App(){
 	return(
 		<div className="torso">
 			<Header tagline="Omeletting you get organised."/>
 			<div className="content">
+				<h2>Plannin&apos; or Packalackin&apos;?</h2>
+				<p>Are you planning the trip or have you done so and just need to see your packing list? [version fetus: packin&apos; leads to all the lists.]</p>
 				<div className="eggBtnHldr">
-					<Link to="/plannin"><EggButton className="btnEgg btnEggMajor" btntext="Plannin'!" /></Link>
-					<Link to="/packin"><EggButton className="btnEgg btnEggMajor" btntext="Packin'!" /></Link>
+					<Link to="/plannin"><EggButton className="btnEgg btnEggMajor" btntext="Plannin&apos;!" /></Link>
+					<Link to="/packin"><EggButton className="btnEgg btnEggMajor" btntext="packalackin&apos;!" /></Link>
 				</div>
 			</div>
 			<Footer />
@@ -28,16 +26,3 @@ function App(){
 
 export default App;
 
-
-
-
-
-// <div className="App">
-// 			<Header tagline="Omeletting you get organised."/>
-// 			<h2>Are you plannin' or packalackin?</h2>
-// 			<div className="eggBtnHldr">
-// 				<EggButton btntxt="Plannin'!" />
-// 				<EggButton btntxt="Packin'!" />
-// 			</div>
-// 			<Footer />
-// 		</div>
