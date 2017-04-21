@@ -26,11 +26,11 @@ class Packin extends React.Component{
 		return (
 			<div className="torso">
 				<Header />
-				<div className="content">
-					<Link to="/"><EggButton className="btnEgg btnEggHome" btntext="Home" /></Link>
-				</div>
+				<Link to="/"><EggButton className="btnEgg btnEggHome" btntext="Home" /></Link>
 				<div>
-				<EggButton className="btnEgg btnEggMajor" loadLists={this.loadLists} btntext="Load Lists" />
+					<EggButton className="btnEgg btnEggMajor" loadLists={this.loadLists} btntext="Load all lists" />
+				</div>
+				<div className="content">
 					<ul>
 						{Object
 							.keys(this.state.lists)
