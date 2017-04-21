@@ -21,6 +21,7 @@ class Packin extends React.Component{
 			lists: lists
 		});
 	}
+
 	render() {
 		return (
 			<div className="torso">
@@ -31,7 +32,10 @@ class Packin extends React.Component{
 				<div>
 				<EggButton className="btnEgg btnEggMajor" loadLists={this.loadLists} btntext="Load Lists" />
 					<ul>
-						<List />
+						{Object
+							.keys(this.state.lists)
+							.map(key => <List key={key} details={this.state.lists[key]} />)
+						}
 					</ul>
 				</div>
 				<Footer />
