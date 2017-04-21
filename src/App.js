@@ -6,9 +6,11 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import EggButton from './components/subcomponents/EggButton';
 
+
 // function tripPlan(props){
 // 	return <span>{props.btntext}</span>
 // }
+//class App extends React.Component(){
 function App(){
 	return(
 		<div className="torso">
@@ -23,6 +25,7 @@ function App(){
 		</div>
 	);
 }
+
 export default App;
 
 

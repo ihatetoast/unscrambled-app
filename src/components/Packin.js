@@ -2,11 +2,25 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Header from './Header';
 import Footer from './Footer';
+import List from './subcomponents/List';
 import EggButton from './subcomponents/EggButton';
-// import $ from 'jquery' later, tater
+import lists from '../packingList';
 
 
 class Packin extends React.Component{
+		constructor(){
+		super();
+		this.loadLists=this.loadLists.bind(this);
+		this.state={
+			lists: {}
+		}
+	}
+	loadLists(){
+		console.log("load list fired");
+		this.setState({
+			lists: lists
+		});
+	}
 	render() {
 		return (
 			<div className="torso">
@@ -14,11 +28,16 @@ class Packin extends React.Component{
 				<div className="content">
 					<Link to="/"><EggButton className="btnEgg btnEggHome" btntext="Home" /></Link>
 				</div>
+				<div>
+				<EggButton className="btnEgg btnEggMajor" loadLists={this.loadLists} btntext="Load Lists" />
+					<ul>
+						<List />
+					</ul>
+				</div>
 				<Footer />
 			</div>
 		);
 	}
-	
 };
 export default Packin;
 

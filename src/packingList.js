@@ -1,31 +1,27 @@
-export default [
-	{
-		name: "Basics",
-		id: 1,
-		include: false,
-		items: [
+module.exports = {
+  list01: {
+    name: "Basics",
+    items: [
 			"wallet",
 			"phone and charger",
 			"home and car keys",
 			"host housekeys",
 			"backpack"
 		]
-	},
-		{
-		name: "Sleepwear",
-		id: 2,
-		include: false,
-		items: [
-			"jammies (1 set per 2 days)",
-			"housesocks / slippers",
-			"robe"
+  },
+  list02: {
+    name: "Sleepwear",
+    items: [
+			"wallet",
+			"phone and charger",
+			"home and car keys",
+			"host housekeys",
+			"backpack"
 		]
-	},
-		{
-		name: "Toiletries",
-		id: 3,
-		include: false,
-		items: [ 
+  },
+  list03: {
+    name: "Toiletries",
+    items: [ 
 			"toothbrush",
 			"toothpaste", 
 			"floss",
@@ -39,12 +35,10 @@ export default [
 			"moisturiser",
 			"deodorant"
 		]
-	},
-		{
-		name: "Dog",
-		id: 4,
-		include: false,
-		items: [
+  },
+  list04: {
+    name: "Hounds",
+    items: [
 			"food (approx 3 cups per day per dog)",
 			"poo bags",
 			"chew toy",
@@ -53,35 +47,29 @@ export default [
 			"leads",
 			"melatonin"
 		]
-	},
-		{
-		name: "Cats",
-		id: 5,
-		include: false,
-		items: [
+  },
+  list05: {
+    name: "Cats",
+    items: [
 			"litterbox, litter, scoop",
 			"food (approx. 1 cup per day)",
 			"3 small dishes",
 			"small crate",
 			"scratching post"
 		]
-	},
-		{
+  },
+	list06: {
 		name: "Cosmetics",
-		id: 6,
-		include: false,
 		items: [
-			"cc cream",
-			"concealer",
-			"foundation",
-			"eyes",
-			"lips"
+		"cc cream",
+		"concealer",
+		"foundation",
+		"eyes",
+		"lips"
 		]
-	}, 
-		{
+	},
+	list07: {
 		name: "Running",
-		id: 7,
-		include: false,
 		items: [
 			"jog bras",
 			"running shoes",
@@ -92,10 +80,8 @@ export default [
 			"buff / earbags"
 		]
 	},
-		{
+	list08: {
 		name: "Clothes: Staying in",
-		id: 8,
-		include: false,
 		items: [
 			"undies (days gone plus 2)",
 			"jeans / shorts (1 for 2 days)",
@@ -103,10 +89,8 @@ export default [
 			"shirts (1.5 per day)",
 		]
 	},
-		{
+	list09: {
 		name: "Clothes: Going out",
-		id: 9,
-		include: false,
 		items: [
 			"boots / nicer shoes",
 			"nicer shirt",
@@ -115,10 +99,8 @@ export default [
 			"a bra"
 		]
 	},
-	{
+	list10: {
 		name: "Code",
-		id: 10,
-		include: false,
 		items: [
 			"laptop",
 			"cords",
@@ -126,16 +108,4 @@ export default [
 			"headphones",
 		]
 	}
-];
-
-
-
-// friends
-
-	// {
-	// 	name: "",
-	// 	id: "",
-	// include: true,
-	// 	items: [
-	// 	]
-	// }
+}

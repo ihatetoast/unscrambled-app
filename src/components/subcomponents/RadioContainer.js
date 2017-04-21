@@ -132,7 +132,7 @@ class RadioContainer extends React.Component{
             type={'radio'}
             options={this.state.petsOptions}
             selectedOptions={this.state.petsSelection} />
-          <EggPicture src={ biggerBoat }/>
+        {/* <EggPicture src={ biggerBoat }/>*/}
         </div>
         <EggBorder />
         <div className="radioPicRow">
