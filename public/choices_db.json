@@ -3,11 +3,11 @@
   "transSelection": ["By car"],
   "accomOptions": ["With Pooh", "With Dad and Ellen", "With Mary and Jeff", "At Overlook La Quinta"],
   "accomSelection": ["With Pooh"],
-  "petsOptions": ["Only my hounds", "Only my cats", "All the furbabies", "No furbabies"],
-  "petsSelection": ["Only my hounds"],
+  "petsOptions": ["No furbabies", "Only my hounds", "Only my cats", "All the furbabies"],
+  "petsSelection": ["No furbabies"],
   "exerOptions": ["Sweatin'", "Slackin'"],
   "exerSelection": ["Sweatin'"],
-  "fancyOptions": ["Ugh. Yes.", "Hell no!"],
+  "fancyOptions": ["Ugh. Yes.", "Yeah, nah."],
   "fancySelection": ["Ugh. Yes."]
   
 }

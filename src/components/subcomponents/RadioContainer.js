@@ -1,4 +1,5 @@
 import React from 'react';
+// import { Link } from 'react-router-dom';
 import EggButton from './EggButton';
 import EggBorder from './EggBorder';
 import EggPicture from './EggPicture';
@@ -51,9 +52,6 @@ class RadioContainer extends React.Component{
       })
       .catch(e => console.log("bugger"))
   }
-  handleSubmit(e){
-    console.log(`You've submitted. Now you need to get lists.`);
-  }
   
   handleTransportation(e){
     console.log(`Handle transportation fired. Should see list for the option I chose.`);
@@ -87,15 +85,25 @@ class RadioContainer extends React.Component{
   }
   handleDecisions(e) {
     e.preventDefault();
+    this.setState({
+      transSelection: [e.target.value],
+      accomSelection: [e.target.value],
+      petsSelection: [e.target.value],
+      exerSelection: [e.target.value],
+      fancySelection: [e.target.value]
+    });
+
     const tripDecisions = {
       transSelection: this.state.transSelection,
       accomSelection: this.state.accomSelection,
       petsSelection: this.state.petsSelection,
       exerSelection: this.state.exerSelection,
       fancySelection: this.state.fancySelection
-    
     };
-    console.log('Send this in a POST request:', tripDecisions)
+    const ts = this.state;
+    console.log(`You are going by ${ts.transSelection[0]} and staying at ${ts.accomSelection[0]} and taking ${ts.petsSelection[0]} 
+      and plannin on ${ts.exerSelection[0]}. Are you going out? You said ${ts.fancySelection[0]}.`);
+    console.log(tripDecisions);
     this.handleClearAll(e);
   }
   render(){
@@ -132,7 +140,7 @@ class RadioContainer extends React.Component{
             type={'radio'}
             options={this.state.petsOptions}
             selectedOptions={this.state.petsSelection} />
-        {/* <EggPicture src={ biggerBoat }/>*/}
+        {/* <EggPicture src={ WILL NEED TO MAKE }/>*/}
         </div>
         <EggBorder />
         <div className="radioPicRow">
@@ -158,7 +166,8 @@ class RadioContainer extends React.Component{
         </div>
        <EggBorder />
         <div className="radioPicRow">
-          <EggButton type="submit" className="btnEgg btnEggMinor" btntext="Save" value="Submit"/>
+         <EggButton type="submit" className="btnEgg btnEggMinor" btntext="Save" value="Submit"/>
+         
           <EggButton onClick={this.handleClearAll} className="btnEgg btnEggMinor" btntext="Clear"/>
         </div>
       </form>
@@ -168,3 +177,7 @@ class RadioContainer extends React.Component{
 };
 export default RadioContainer;
 
+
+
+ // <button className="btnEgg btnEggMinor"><Link to="/packing"> save &amp; pack</Link></button>
+  // <EggButton type="submit" className="btnEgg btnEggMinor" btntext="Save" value="Submit" onClick={this.SOMETHING}/>
