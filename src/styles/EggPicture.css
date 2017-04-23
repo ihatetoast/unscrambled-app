@@ -2,3 +2,8 @@
 .eggPic{
 	width: 300px;
 }
+@media (max-width: 620px) { 
+  	.eggPic{
+		width: 200px;
+	}
+}

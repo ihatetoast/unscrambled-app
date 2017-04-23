@@ -4,7 +4,7 @@ import EggButton from './EggButton';
 import EggBorder from './EggBorder';
 import EggPicture from './EggPicture';
 import RadioGroup from './RadioGroup';
-import './../../styles/RadioContainer.css';
+import './../../styles/RadCont_LstBits.css';
 
 import biggerBoat from '../../assets/jaws.jpg';
 import shiningLiving from '../../assets/shining-twins_living.svg';
@@ -109,6 +109,7 @@ class RadioContainer extends React.Component{
   render(){
     return(
     <div>
+      <h2>You have decisions to make:</h2>
       <form className="radioBtnHolder" onSubmit={(e) => this.handleDecisions(e)}>
         <div className="radioPicRow">
           <RadioGroup

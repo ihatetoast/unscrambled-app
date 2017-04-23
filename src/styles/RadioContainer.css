@@ -1,9 +1,0 @@
-.radioBtnHolder{
-	display: flex;
-	flex-direction: column;
-}
-.radioPicRow {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-}

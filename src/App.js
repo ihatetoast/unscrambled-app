@@ -13,10 +13,11 @@ function App(){
 			<Header tagline="Omeletting you get organised."/>
 			<div className="content">
 				<h2>Plannin&apos; or Packalackin&apos;?</h2>
-				<p>Are you planning the trip or have you done so and just need to see your packing list? [version fetus: packin&apos; leads to all the lists.]</p>
+				<p>If you&apos;re going to edit the master list, you are plannin&apos;. If you just want to pack from the master list, you are packalackin&apos;.</p>
+		
 				<div className="eggBtnHldr">
 					<Link to="/plannin"><EggButton className="btnEgg btnEggMajor" btntext="Plannin&apos;!" /></Link>
-					<Link to="/packin"><EggButton className="btnEgg btnEggMajor" btntext="packalackin&apos;!" /></Link>
+					<Link to="/packin"><EggButton className="btnEgg btnEggMajor" btntext="Packalackin&apos;!" /></Link>
 				</div>
 			</div>
 			<Footer />

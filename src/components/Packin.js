@@ -7,7 +7,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Header from './Header';
 import Footer from './Footer';
-import List from './subcomponents/List';
+import MasterList from './subcomponents/MasterList';
 import EggButton from './subcomponents/EggButton';
 import lists from '../packingList';
 
@@ -39,7 +39,7 @@ class Packin extends React.Component{
 					<ul>
 						{Object
 							.keys(this.state.lists)
-							.map(key => <List key={key} details={this.state.lists[key]} />)
+							.map(key => <MasterList key={key} details={this.state.lists[key]} />)
 						}
 					</ul>
 				</div>

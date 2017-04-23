@@ -1,0 +1,18 @@
+.radioBtnHolder, .listBitsFlex{
+	display: flex;
+	flex-direction: column;
+}
+.radioPicRow {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.listBitsFlex{
+	margin-left: 20px;
+	width: 510px;
+	height: 1239px;
+}
+/*@media (max-width: 500px) { 
+  	
+}*/

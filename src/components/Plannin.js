@@ -5,6 +5,7 @@ import './../styles/Plannin.css';
 import Header from './Header';
 import Footer from './Footer';
 import EggButton from './subcomponents/EggButton';
+import ListBits from './subcomponents/ListBits';
 import RadioContainer from './subcomponents/RadioContainer';
 
 class Plannin extends React.Component{
@@ -15,8 +16,9 @@ class Plannin extends React.Component{
 				<section className="plannin content">
 					<Link to="/"><EggButton className="btnEgg btnEggHome" btntext="Home" /></Link>
 					<div className="scramListsHolder">
-						<h2>You have decisions to make:</h2>
+						
 						<RadioContainer />
+						<ListBits />
 					</div>
 				</section>
 				<Footer />
